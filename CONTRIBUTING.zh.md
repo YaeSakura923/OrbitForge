@@ -1,12 +1,12 @@
-# 为 Flywave.gl 贡献代码
+# 为 OrbitForge 贡献代码
 
-感谢您对为 Flywave.gl 贡献代码的兴趣！我们欢迎社区的贡献，以帮助改进我们的 3D 地图渲染引擎。
+感谢您对为 OrbitForge 贡献代码的兴趣！我们欢迎社区的贡献，以帮助改进我们的 3D 地图渲染引擎。
 
 ## 如何贡献
 
 ### 报告问题
 
-如果您发现 bug 或有功能请求，请在我们的 GitHub 仓库上[提交问题](https://github.com/flywave/flywave.gl/issues/new)。报告 bug 时，请包括：
+如果您发现 bug 或有功能请求，请在我们的 GitHub 仓库上[提交问题](https://github.com/YaeSakura923/OrbitForge/issues/new)。报告 bug 时，请包括：
 
 - 清晰且具有描述性的标题
 - 重现问题的步骤
@@ -46,4 +46,4 @@
 
 ## 有疑问？
 
-如果您对贡献有任何疑问，请随时在 GitHub 上[发起讨论](https://github.com/flywave/flywave.gl/discussions)。
+如果您对贡献有任何疑问，请随时在 GitHub 上[发起讨论](https://github.com/YaeSakura923/OrbitForge/discussions)。

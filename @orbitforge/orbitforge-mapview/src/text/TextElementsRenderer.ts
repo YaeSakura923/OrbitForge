@@ -78,7 +78,7 @@ import { type ViewState } from "./ViewState";
 
 interface RenderParams {
     numRenderedTextElements: number;
-    // TODO: FLYWAVE-7373. Move to update() method at the end of the frame.
+    // TODO: ORBITFORGE-7373. Move to update() method at the end of the frame.
     fadeAnimationRunning: boolean;
     time: number;
 }
@@ -910,7 +910,7 @@ export class TextElementsRenderer {
             const textElementStyle = this.m_textStyleCache.getTextElementStyle(textElement.style);
             const textCanvas = textElementStyle.textCanvas;
 
-            // TODO: FLYWAVE-7648. Discard hidden kinds sooner, before placement.
+            // TODO: ORBITFORGE-7648. Discard hidden kinds sooner, before placement.
             // Check if the label should be hidden.
             if (
                 hiddenKinds !== undefined &&
@@ -1242,10 +1242,10 @@ export class TextElementsRenderer {
         const updateStartTime =
             this.overloaded && this.m_viewState.isDynamic ? PerformanceTimer.now() : undefined;
 
-        // TODO: FLYWAVE-7648. Skip all data sources that won't contain text.
-        // TODO: FLYWAVE-7651. Higher priority labels should be updated before lower priority ones
+        // TODO: ORBITFORGE-7648. Skip all data sources that won't contain text.
+        // TODO: ORBITFORGE-7651. Higher priority labels should be updated before lower priority ones
         // across all data sources.
-        // TODO: FLYWAVE-7373. Use rendered tiles (tiles currently rendered to cover the view,
+        // TODO: ORBITFORGE-7373. Use rendered tiles (tiles currently rendered to cover the view,
         // including fallbacks if necessary) instead of visible tiles (target tiles that might not
         // be decoded yet).
         // Otherwise labels persistent when crossing a zoom level boundary will flicker (fade out
@@ -1275,7 +1275,7 @@ export class TextElementsRenderer {
         }
         const sortedTiles = visibleTiles;
 
-        // TODO: FLYWAVE-7648. Really needed? Should it be done here or in VisibleTileSet?
+        // TODO: ORBITFORGE-7648. Really needed? Should it be done here or in VisibleTileSet?
         sortedTiles.sort((a: Tile, b: Tile) => {
             return (
                 a.tileKey.mortonCode(tileDataSource.getTilingScheme().mortonTileEncoding) -
@@ -1476,7 +1476,7 @@ export class TextElementsRenderer {
 
         const maxNumPlacedTextElements = this.m_options.maxNumVisibleLabels;
 
-        // TODO: FLYWAVE-7648. Potential performance improvement. Place persistent labels + rejected
+        // TODO: ORBITFORGE-7648. Potential performance improvement. Place persistent labels + rejected
         // candidates from previous frame if there's been no placement in this one.
         const groupStates = this.m_textElementStateCache.sortedGroupStates;
         let currentPriority: number = groupStates[0].priority;
@@ -1621,7 +1621,7 @@ export class TextElementsRenderer {
 
                 // Get the screen points that define the label's segments and create a path with
                 // them.
-                // TODO: FLYWAVE-7648. Optimize array allocations.
+                // TODO: ORBITFORGE-7648. Optimize array allocations.
                 const screenPoints: THREE.Vector2[] = [];
                 for (const pt of textElement.path!) {
                     const pX = tempScreenPosition.x + pt.x * screenSize.width;
@@ -1995,7 +1995,7 @@ export class TextElementsRenderer {
         textCanvas: TextCanvas,
         renderParams: RenderParams
     ): boolean {
-        // TODO: FLYWAVE-7649. Add fade out transitions for path labels.
+        // TODO: ORBITFORGE-7649. Add fade out transitions for path labels.
         const textMaxDistance = getMaxViewDistance(
             this.m_viewState,
             this.m_options.maxDistanceRatioForTextLabels!

@@ -10,7 +10,7 @@ import {
     createDecoderConfig,
     createBrowserConfig,
     createAssetsConfig,
-    FlywaveWebpackConfig
+    OrbitForgeWebpackConfig
 } from "@orbitforge/orbitforge-webpack-utils/scripts/WebpackConfig";
 
 // Get current file path and directory
@@ -34,7 +34,7 @@ function getFilenameSuffix(): string {
 }
 
 // Define configuration options
-const orbitforgeConfig: FlywaveWebpackConfig = {
+const orbitforgeConfig: OrbitForgeWebpackConfig = {
     themePath: mapThemePath,
     fontResourcesPath: fontResourcesPath,
     threeDracoPath: threeDracoPath,

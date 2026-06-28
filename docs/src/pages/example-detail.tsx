@@ -382,7 +382,7 @@ export default function ExampleDetail() {
                     "three/examples/jsm/loaders/FBXLoader.js": "https://unpkg.com/three@0.178.0/examples/jsm/loaders/FBXLoader.js",
                     "@turf/turf": "https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/+esm",
                     "dat.gui": "https://unpkg.com/dat.gui@0.7.9/build/dat.gui.module.js",  
-                    "@orbitforge/OrbitForge": "https://unpkg.com/@flywave/OrbitForge@latest/dist/OrbitForge.module.js",
+                    "@orbitforge/OrbitForge": "https://unpkg.com/@orbitforge/OrbitForge@latest/dist/OrbitForge.module.js",
                     "three-nebula": "./three-nebula.module.js"
                 }
             }
@@ -392,7 +392,7 @@ export default function ExampleDetail() {
                <canvas id="mapCanvas"></canvas> 
                 <script type="module"> 
                 const CESIUM_ION_TOKEN = "${CESIUM_ION_TOKEN}";
-                window.FLYWAVE_BASE_URL = ".";
+                window.ORBITFORGE_BASE_URL = ".";
                ${codeContent}
             </script>
           </body>

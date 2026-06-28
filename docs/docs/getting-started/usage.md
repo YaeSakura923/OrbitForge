@@ -11,7 +11,7 @@ Before using OrbitForge, you may need to configure the base path to correctly lo
 ```html
 <script>
   // Set global base path
-  window.FLYWAVE_BASE_URL = "https://flywave.github.io/OrbitForge/resources/";
+  window.ORBITFORGE_BASE_URL = "https://YaeSakura923.github.io/OrbitForge/resources/";
 </script>
 ```
 
@@ -19,7 +19,7 @@ Or set it in your application code:
 
 ```typescript
 // Set base path before initializing MapView
-window.FLYWAVE_BASE_URL = "https://flywave.github.io/OrbitForge/resources/";
+window.ORBITFORGE_BASE_URL = "https://YaeSakura923.github.io/OrbitForge/resources/";
 import { MapView, GeoCoordinates, MapControls, sphereProjection } from "@orbitforge/OrbitForge";
 ```
 

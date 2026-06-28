@@ -23,7 +23,7 @@ describe("StringEncodedNumeral", function () {
         testRGBColor();
     });
     it("RGBA Colors", () => {
-        // TODO: Update RGBA colors test when FLYWAVE-7517 is done.
+        // TODO: Update RGBA colors test when ORBITFORGE-7517 is done.
         testRGBAColor();
     });
     it("HSL Colors", () => {

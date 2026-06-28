@@ -229,7 +229,7 @@ export interface StylePriority {
 }
 
 /**
- * A type representing FLYWAVE themes with all the styleset declarations
+ * A type representing OrbitForge themes with all the styleset declarations
  * grouped in one `Array`.
  *
  * @internal This type will merge with {@link Theme}.

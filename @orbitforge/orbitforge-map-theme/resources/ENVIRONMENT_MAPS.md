@@ -1,10 +1,10 @@
-# Environment Maps in Flywave GL
+# Environment Maps in OrbitForge
 
-Environment maps provide reflections and lighting for 3D objects in the scene. This document explains how to configure and use environment maps in Flywave GL themes.
+Environment maps provide reflections and lighting for 3D objects in the scene. This document explains how to configure and use environment maps in OrbitForge themes.
 
 ## Overview
 
-Environment maps are textures that define the lighting and reflections for the entire scene. Flywave GL supports multiple types of environment maps.
+Environment maps are textures that define the lighting and reflections for the entire scene. OrbitForge supports multiple types of environment maps.
 
 ## Configuration
 

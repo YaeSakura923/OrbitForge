@@ -781,7 +781,7 @@ export function placePathLabel(
     tmpMeasurementParams.outputCharacterBounds = tmpBoxes;
     tmpMeasurementParams.letterCaseArray = labelState.element.glyphCaseArray!;
 
-    // TODO: FLYWAVE-7648. TextCanvas.measureText does the placement as in TextCanvas.addText but
+    // TODO: ORBITFORGE-7648. TextCanvas.measureText does the placement as in TextCanvas.addText but
     // without storing the result. If the measurement succeeds, the placement work is done
     // twice.
     // This could be done in one step (e.g measureAndAddText). Collision test could be injected
@@ -863,7 +863,7 @@ export function isPathLabelTooSmall(
         outScreenPoints.push(tmpScreenPosition.clone());
     }
 
-    // TODO: (FLYWAVE-3515)
+    // TODO: (ORBITFORGE-3515)
     //      The rendering of a path label that contains just a single point that is not
     //      visible is impossible, which is problematic with long paths.
     //      Fix: Skip/clip the invisible points at beginning and end of the path to get

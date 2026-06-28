@@ -1046,7 +1046,7 @@ export class VisibleTileSet {
      **/
     private skipOverlappedTiles(dataSource: DataSource, tile: Tile) {
         if (this.options.projection.type === ProjectionType.Spherical) {
-            // FLYWAVE-7899, currently the globe has no background planes in the tiles (it relies on
+            // ORBITFORGE-7899, currently the globe has no background planes in the tiles (it relies on
             // the BackgroundDataSource), because the LOD mismatches, hence disabling for globe.
             return;
         }

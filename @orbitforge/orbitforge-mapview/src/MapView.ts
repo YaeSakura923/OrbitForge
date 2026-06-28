@@ -2206,7 +2206,7 @@ export class MapView extends EventDispatcher {
         if (dataSource.addGroundPlane === true && conflictingDataSource !== undefined) {
             // eslint-disable-next-line no-console
             console.warn(
-                `The DataSources ${dataSource.name} and ${conflictingDataSource.name} both have a ground plane added, this will cause problems with the fallback logic, see FLYWAVE-14728 & FLYWAVE-15488.`
+                `The DataSources ${dataSource.name} and ${conflictingDataSource.name} both have a ground plane added, this will cause problems with the fallback logic, see ORBITFORGE-14728 & ORBITFORGE-15488.`
             );
         }
         this.m_tileDataSources.push(dataSource);
@@ -3736,7 +3736,7 @@ export class MapView extends EventDispatcher {
         // frame, with no more tiles, geometry and labels waiting to be added, and no animation
         // running. The initial placement of text in this render call may have changed the loading
         // state of the TextElementsRenderer, so this has to be checked again.
-        // FLYWAVE-10919: Fading is currently ignored by the frame complete event.
+        // ORBITFORGE-10919: Fading is currently ignored by the frame complete event.
         if (!this.isDynamicFrame) {
             if (this.m_firstFrameComplete === false) {
                 this.m_firstFrameComplete = true;

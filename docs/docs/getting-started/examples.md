@@ -39,7 +39,7 @@ To run the examples locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/flywave/OrbitForge.git
+   git clone https://github.com/YaeSakura923/OrbitForge.git
    ```
 
 2. Navigate to the examples directory:
@@ -61,7 +61,7 @@ To run the examples locally:
 
 ## Online Examples
 
-You can also view our online examples at [flywave.github.io/OrbitForge/examples](https://flywave.github.io/OrbitForge/examples).
+You can also view our online examples at [YaeSakura923.github.io/OrbitForge/examples](https://YaeSakura923.github.io/OrbitForge/examples).
 
 ## Contributing Examples
 

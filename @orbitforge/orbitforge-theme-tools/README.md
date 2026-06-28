@@ -1,6 +1,6 @@
 # Package content - the tools
 
-FLYWAVE theme tools are build in Node.js environment (see: https://nodejs.org) so you will
+OrbitForge theme tools are build in Node.js environment (see: https://nodejs.org) so you will
 need to install some prerequisities to use them:
 
 -   **Node.js**

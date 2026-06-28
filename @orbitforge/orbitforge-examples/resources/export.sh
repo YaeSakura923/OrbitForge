@@ -2,7 +2,7 @@
 
 # 数据库连接配置
 DB_HOST="192.168.1.18"
-DB_NAME="flywave_server_geostore"
+DB_NAME="orbitforge_server_geostore"
 DB_USER="postgres"  # 请替换为实际用户名
 DB_PASS="123456"  # 请替换为实际密码
 TABLE_NAME="data_bpttatyuwjnqbj3x1xkp763rho"

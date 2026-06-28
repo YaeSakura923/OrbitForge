@@ -17,7 +17,7 @@
         "webgl",
         "three.js"
     ],
-    "author": "Flywave Team",
+    "author": "OrbitForge Team",
     "license": "Apache-2.0",
     "dependencies": {
         "three": "catalog:",

@@ -1,12 +1,12 @@
-# Contributing to Flywave.gl
+# Contributing to OrbitForge
 
-Thank you for your interest in contributing to Flywave.gl! We welcome contributions from the community to help improve our 3D map rendering engine.
+Thank you for your interest in contributing to OrbitForge! We welcome contributions from the community to help improve our 3D map rendering engine.
 
 ## How to Contribute
 
 ### Reporting Issues
 
-If you find a bug or have a feature request, please [open an issue](https://github.com/flywave/flywave.gl/issues/new) on our GitHub repository. When reporting bugs, please include:
+If you find a bug or have a feature request, please [open an issue](https://github.com/YaeSakura923/OrbitForge/issues/new) on our GitHub repository. When reporting bugs, please include:
 
 - A clear and descriptive title
 - Steps to reproduce the issue
@@ -46,4 +46,4 @@ Please note that this project is released with a Contributor Code of Conduct. By
 
 ## Questions?
 
-If you have any questions about contributing, feel free to [open a discussion](https://github.com/flywave/flywave.gl/discussions) on GitHub.
+If you have any questions about contributing, feel free to [open a discussion](https://github.com/YaeSakura923/OrbitForge/discussions) on GitHub.

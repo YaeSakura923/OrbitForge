@@ -122,7 +122,7 @@ function FeaturesSection() {
                     </div>
                     <p className={styles.sectionSubtitle}>
                         <Translate id="homepage.features.subtitle">
-                            Flywave.gl 提供全面的 3D 地图渲染能力，专为高性能可视化设计
+                            OrbitForge 提供全面的 3D 地图渲染能力，专为高性能可视化设计
                         </Translate>
                     </p>
                 </div>

@@ -213,7 +213,7 @@ export class RenderState {
             this.m_state =
                 this.m_state === FadingState.FadingIn ? FadingState.FadedIn : FadingState.FadedOut;
         } else {
-            // TODO: FLYWAVE-7648. Do this once for all labels (calculate the last frame value
+            // TODO: ORBITFORGE-7648. Do this once for all labels (calculate the last frame value
             // increment).
             this.value = fadingTime / this.fadeTime;
 

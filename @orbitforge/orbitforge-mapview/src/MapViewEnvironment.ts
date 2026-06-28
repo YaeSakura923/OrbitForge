@@ -179,7 +179,7 @@ export class MapViewEnvironment {
      * Update the directional light camera. Note, this requires the cameras to first be updated.
      */
     updateLights() {
-        // TODO: FLYWAVE-9479 Globe doesn't support shadows.
+        // TODO: ORBITFORGE-9479 Globe doesn't support shadows.
         if (
             !this.m_mapView.shadowsEnabled ||
             this.m_mapView.projection.type === ProjectionType.Spherical ||

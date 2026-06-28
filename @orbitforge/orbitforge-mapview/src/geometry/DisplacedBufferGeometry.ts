@@ -101,7 +101,7 @@ export class DisplacedBufferGeometry extends THREE.BufferGeometry {
         this.resetBoundingVolumes(displacementRangeChanged);
     }
 
-    // FLYWAVE-9585: Override of base class method, however tslint doesn't recognize it as such.
+    // ORBITFORGE-9585: Override of base class method, however tslint doesn't recognize it as such.
     computeBoundingBox(): void {
         // Calculate a coarse approximation of the displaced geometry bbox by displacing the
         // original bbox and enlarging it to cover the whole displacement range.
@@ -123,7 +123,7 @@ export class DisplacedBufferGeometry extends THREE.BufferGeometry {
         );
     }
 
-    // FLYWAVE-9585: Override of base class method, however tslint doesn't recognize it as such.
+    // ORBITFORGE-9585: Override of base class method, however tslint doesn't recognize it as such.
     computeBoundingSphere(): void {
         // Use as coarse approximation the sphere bounding the bbox.
         if (this.boundingBox === null) {

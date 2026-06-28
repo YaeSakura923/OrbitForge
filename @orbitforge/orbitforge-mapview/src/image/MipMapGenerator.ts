@@ -70,7 +70,7 @@ export class MipMapGenerator {
 
         let width = paddedWidth * 0.5;
         let height = paddedHeight * 0.5;
-        // FLYWAVE-10765 WebGL complains if we don't generate down to a 1x1 texture (this was the case
+        // ORBITFORGE-10765 WebGL complains if we don't generate down to a 1x1 texture (this was the case
         // previously when height != width), and thus the final texture generated was 2x1 texture
         // and not 1x1.
         while (width >= 1 || height >= 1) {

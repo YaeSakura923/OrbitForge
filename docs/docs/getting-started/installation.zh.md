@@ -32,7 +32,7 @@ npm install @orbitforge/OrbitForge
 ```html
 <script>
   // 在引入 OrbitForge 之前设置基础路径
-  window.FLYWAVE_BASE_URL = "https://flywave.github.io/OrbitForge/resources/";
+  window.ORBITFORGE_BASE_URL = "https://YaeSakura923.github.io/OrbitForge/resources/";
 </script>
 ``` 
 

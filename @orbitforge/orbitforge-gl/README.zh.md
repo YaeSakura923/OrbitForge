@@ -1,7 +1,7 @@
-# 🌍 Flywave.gl
+# 🌍 OrbitForge
 
-[![CI](https://img.shields.io/github/actions/workflow/status/flywave/orbitforge/ci.yaml?branch=master&style=for-the-badge&label=CI&logo=github)](https://github.com/YaeSakura923/OrbitForge/actions/workflows/ci.yaml)
-[![Code Coverage](https://img.shields.io/codecov/c/github/flywave/orbitforge/master?style=for-the-badge&logo=codecov&labelColor=2c3e50)](https://codecov.io/gh/flywave/orbitforge)
+[![CI](https://img.shields.io/github/actions/workflow/status/YaeSakura923/orbitforge/ci.yaml?branch=master&style=for-the-badge&label=CI&logo=github)](https://github.com/YaeSakura923/OrbitForge/actions/workflows/ci.yaml)
+[![Code Coverage](https://img.shields.io/codecov/c/github/YaeSakura923/orbitforge/master?style=for-the-badge&logo=codecov&labelColor=2c3e50)](https://codecov.io/gh/YaeSakura923/orbitforge)
 [![NPM 版本](https://img.shields.io/npm/v/@orbitforge/orbitforge-gl.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@orbitforge/orbitforge-gl)
 [![许可证](https://img.shields.io/npm/l/@orbitforge/orbitforge-gl.svg?style=for-the-badge)](https://github.com/YaeSakura923/OrbitForge/blob/master/LICENSE)
 [![下载量](https://img.shields.io/npm/dm/@orbitforge/orbitforge-gl.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@orbitforge/orbitforge-gl)
@@ -11,7 +11,7 @@
 
 *使用 WebGL 和 Three.js 创建高性能、可扩展的 3D 地图可视化解决方案*
 
-[快速开始](#快速开始) · [文档](https://flywave.github.io/OrbitForge/) · [示例](https://flywave.github.io/OrbitForge/examples) 
+[快速开始](#快速开始) · [文档](https://YaeSakura923.github.io/OrbitForge/) · [示例](https://YaeSakura923.github.io/OrbitForge/examples) 
 <!-- · [官网](https://orbitforge.dev) -->
 
 ---
@@ -52,10 +52,10 @@
 
 ## 文档
 
-- [完整文档](https://flywave.github.io/OrbitForge) - API 文档、教程、最佳实践
-- [示例集合](https://flywave.github.io/OrbitForge/examples) - 功能示例、代码片段
-- [开发指南](https://flywave.github.io/OrbitForge/docs/development/setup.html) - 环境搭建、构建说明
-- [快速开始](https://flywave.github.io/OrbitForge/docs/getting-started/installation.html) - 安装、基本使用
+- [完整文档](https://YaeSakura923.github.io/OrbitForge) - API 文档、教程、最佳实践
+- [示例集合](https://YaeSakura923.github.io/OrbitForge/examples) - 功能示例、代码片段
+- [开发指南](https://YaeSakura923.github.io/OrbitForge/docs/development/setup.html) - 环境搭建、构建说明
+- [快速开始](https://YaeSakura923.github.io/OrbitForge/docs/getting-started/installation.html) - 安装、基本使用
 - [问题反馈](https://github.com/YaeSakura923/OrbitForge/issues) - Bug 报告、功能建议
 - [社区讨论](https://github.com/YaeSakura923/OrbitForge/discussions) - 技术交流、使用帮助
 
@@ -120,6 +120,6 @@ const mapControls = new MapControls(mapView);
 
 ## 许可证
 
-Copyright © 2022-2025 [Flywave 项目作者](https://github.com/YaeSakura923)
+Copyright © 2022-2025 [OrbitForge 项目作者](https://github.com/YaeSakura923)
 
 Licensed under the [Apache License, Version 2.0](https://github.com/YaeSakura923/OrbitForge/blob/main/LICENSE).

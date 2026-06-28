@@ -330,7 +330,7 @@ describe("MapViewUtils", function () {
             result = MapViewUtils.calculateZoomLevelFromDistance(mapView, 1000000000000);
             expect(result).to.be.equal(1);
             /*
-             *   23.04.2018 - Zoom level outputs come from FLYWAVE
+             *   23.04.2018 - Zoom level outputs come from OrbitForge
              */
             result = MapViewUtils.calculateZoomLevelFromDistance(mapView, 1000);
             result = MapViewUtils.calculateZoomLevelFromDistance(mapView, 10000);

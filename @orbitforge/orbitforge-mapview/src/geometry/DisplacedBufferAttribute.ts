@@ -66,7 +66,7 @@ export class DisplacedBufferAttribute extends THREE.BufferAttribute {
         this.resetTexture(displacementMap);
     }
 
-    // FLYWAVE-9585: These getters are overrides of the base class ones, however tslint doesn't
+    // ORBITFORGE-9585: These getters are overrides of the base class ones, however tslint doesn't
     // recognize them as such.
     getX(index: number): number {
         return this.getDisplacedCoordinate(index).x;

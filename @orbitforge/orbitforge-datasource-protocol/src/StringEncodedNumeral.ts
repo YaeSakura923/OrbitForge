@@ -65,7 +65,7 @@ const StringEncodedHex: StringEncodedNumeralFormat = {
         // Only few sizes are possible for given reg-exp.
         assert(size === 4 || size === 8, `Matched incorrect hex color format`);
         // Note that we simply ignore alpha channel value.
-        // TODO: To be resolved with FLYWAVE-7517
+        // TODO: To be resolved with ORBITFORGE-7517
         if (size === 4) {
             // #RGB or #RGBA
             target[0] = parseInt(hex.charAt(0) + hex.charAt(0), 16) / 255;

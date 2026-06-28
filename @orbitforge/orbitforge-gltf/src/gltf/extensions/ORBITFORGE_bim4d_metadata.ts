@@ -4,7 +4,7 @@
 import { GLTFScenegraph } from "../api/gltf-scenegraph";
 import type { GLTF, GLTFNode } from "../types/gltf-json-schema";
 
-const EXTENSION_NAME = "FLYWAVE_bim4d_metadata";
+const EXTENSION_NAME = "ORBITFORGE_bim4d_metadata";
 export const name = EXTENSION_NAME;
 
 // 状态枚举定义

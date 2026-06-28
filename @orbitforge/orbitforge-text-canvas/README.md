@@ -2,7 +2,7 @@
 
 ## Overview
 
-`Flywave-Text-Canvas` is a robust [Signed Distance Field (SDF)](https://en.wikipedia.org/wiki/Signed_distance_function) text rendering library for `three.js`. It
+`OrbitForge-Text-Canvas` is a robust [Signed Distance Field (SDF)](https://en.wikipedia.org/wiki/Signed_distance_function) text rendering library for `three.js`. It
 handles:
 
   * Proper typesetting.

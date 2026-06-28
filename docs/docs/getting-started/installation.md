@@ -29,7 +29,7 @@ To use OrbitForge in a browser environment, include the library in your HTML:
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Flywave.gl Example</title>
+    <title>OrbitForge Example</title>
 </head>
 <body>
     <canvas id="mapCanvas"></canvas>
@@ -82,4 +82,4 @@ If you encounter any issues during installation:
    pnpm install
    ```
 
-For more detailed troubleshooting, please refer to our [documentation](../README.md) or [community support](https://github.com/flywave/OrbitForge/issues).
+For more detailed troubleshooting, please refer to our [documentation](../README.md) or [community support](https://github.com/YaeSakura923/OrbitForge/issues).

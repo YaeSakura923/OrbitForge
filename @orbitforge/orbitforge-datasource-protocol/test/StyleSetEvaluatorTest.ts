@@ -996,7 +996,7 @@ describe("StyleSetEvaluator", function () {
                 expect(poiName).equals(entry.attributes.GENERIC_ICONOGRAPHY_NAME);
             }
         }
-        // See FLYWAVE-17877, the shared caching is not yet implemented, therefore
+        // See ORBITFORGE-17877, the shared caching is not yet implemented, therefore
         // expressions are evaluated more then once
         //expect(lookupSpy.callCount).
         // equals(entries.length, " each look up expression is evaluated once");

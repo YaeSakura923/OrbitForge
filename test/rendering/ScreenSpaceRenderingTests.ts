@@ -83,7 +83,7 @@ describe("ScreenSpaceRendering Test", function () {
     it("renders icons and text using double precision coordinates", async function () {
         this.timeout(5000);
 
-        // FLYWAVE-14465: Text and cross icon must be centered on green square.
+        // ORBITFORGE-14465: Text and cross icon must be centered on green square.
         const squaresStyle: Style = {
             when: "$geometryType == 'point'",
             technique: "squares",

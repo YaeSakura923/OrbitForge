@@ -22,7 +22,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 
-export interface FlywaveWebpackConfig {
+export interface OrbitForgeWebpackConfig {
     mainEntry?: string;
     decoderEntry?: string;
     htmlTemplate?: string;
@@ -83,7 +83,7 @@ function getSubprojectTsconfigPathsPlugins(projectRoot: string): TsconfigPathsPl
 /**
  * 创建基础Webpack配置
  */
-export function createBaseConfig(config?: FlywaveWebpackConfig): Configuration {
+export function createBaseConfig(config?: OrbitForgeWebpackConfig): Configuration {
     const projectRoot = config?.projectRoot || path.resolve(__dirname, '../../../');
     const tsConfigPath = config?.tsConfigPath || path.resolve(process.cwd(), "tsconfig.json");
 
@@ -142,7 +142,7 @@ export function createBaseConfig(config?: FlywaveWebpackConfig): Configuration {
 /**
  * 创建浏览器配置
  */
-export function createBrowserConfig(config?: FlywaveWebpackConfig): Configuration {
+export function createBrowserConfig(config?: OrbitForgeWebpackConfig): Configuration {
     const baseConfig = createBaseConfig(config);
 
     return {
@@ -153,7 +153,7 @@ export function createBrowserConfig(config?: FlywaveWebpackConfig): Configuratio
 /**
  * 创建解码器配置
  */
-export function createDecoderConfig(config?: FlywaveWebpackConfig): Configuration {
+export function createDecoderConfig(config?: OrbitForgeWebpackConfig): Configuration {
     const baseConfig = createBaseConfig(config);
     const outputPath = config?.outputPath || path.join(process.cwd(), "dist");
 
@@ -173,7 +173,7 @@ export function createDecoderConfig(config?: FlywaveWebpackConfig): Configuratio
 /**
  * 创建资源复制配置
  */
-export function createAssetsConfig(config?: FlywaveWebpackConfig): CopyPattern[] {
+export function createAssetsConfig(config?: OrbitForgeWebpackConfig): CopyPattern[] {
     const assets: CopyPattern[] = [];
 
     // Add theme resources
@@ -225,10 +225,10 @@ export function createAssetsConfig(config?: FlywaveWebpackConfig): CopyPattern[]
 
 export function addWebpackConfig(
     config?: Configuration,
-    orbitforgeConfig?: FlywaveWebpackConfig
+    orbitforgeConfig?: OrbitForgeWebpackConfig
 ) {
     if (Array.isArray(config) || typeof config === "function") {
-        throw new Error("config passed to addFlywaveWebpackConfig must be a Configuration object");
+        throw new Error("config passed to addOrbitForgeWebpackConfig must be a Configuration object");
     }
     const userConfig = config !== undefined ? config : {};
     const mode = process.env.NODE_ENV === "production" ? "production" : "development";

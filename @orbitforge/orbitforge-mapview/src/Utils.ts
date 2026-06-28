@@ -83,7 +83,7 @@ const tmpCamera = new THREE.PerspectiveCamera();
  * As a result, given a fixed integer zoom level input, the final zoom level computed at every frame
  * may fall sometimes below the integer value and others above. This causes flickering since each
  * frame will use different tile levels and different style evaluations for object visibility.
- * See FLYWAVE-9673 and FLYWAVE-8523.
+ * See ORBITFORGE-9673 and ORBITFORGE-8523.
  * @param zoomLevel - Input zoom level
  * @return The ceiling zoom level if input zoom level is close enough, otherwise the unmodified
  * input zoom level.
@@ -1849,7 +1849,7 @@ export namespace MapViewUtils {
     /**
      * Check if tiles or other content is currently being loaded.
      *
-     * This method can be removed once FLYWAVE-7932 is implemented.
+     * This method can be removed once ORBITFORGE-7932 is implemented.
      *
      * @returns `true` if MapView has visible tiles or other content that is being loaded.
      */

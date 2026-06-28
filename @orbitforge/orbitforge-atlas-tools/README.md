@@ -1,6 +1,6 @@
 # Package content - the tools
 
-Flywave.gl atlas tools are build in Node.js environment (see: https://nodejs.org) so you will
+OrbitForge atlas tools are build in Node.js environment (see: https://nodejs.org) so you will
 need to install some prerequisities to use them:
 
 -   **Node.js**
@@ -115,7 +115,7 @@ as it decides what kind of operation you wish to perform on images. Each operati
 attributes set that may define different behaviour (i.e. blending modes), additional input image (for adding backgrounds, foregrounds or blending other layers).
 
 For full set of operations available and their parameters please refer to:
-[ImageProcessing.ts](https://github.com/flywave/orbitforge/tree/master/@orbitforge/orbitforge-atlas-tools/src/ImageProcessing.ts)
+[ImageProcessing.ts](https://github.com/YaeSakura923/orbitforge/tree/master/@orbitforge/orbitforge-atlas-tools/src/ImageProcessing.ts)
 
 # **orbitforge-sprites-generator** - complementary tool
 

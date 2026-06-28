@@ -10,12 +10,12 @@ import { type PickResult } from "./PickHandler";
 // 2. distance to the camera (closer first)
 // 3. reversed render order (higher first)
 //
-// This criteria order is temporary, until FLYWAVE-16245 gets implemented.
+// This criteria order is temporary, until ORBITFORGE-16245 gets implemented.
 // Currently, rendering is configured in a way that makes 2D spatials occlude extruded buildings,
 // since spatials belong to a higher layer. Picking order reflects that, but comparison by distance should
 // happen first, once extruded buildings become rendered on top of spatials.
 function defaultSort(lhs: PickResult, rhs: PickResult) {
-    // FLYWAVE-14531: Compare by "dataSourceOrder" first,
+    // ORBITFORGE-14531: Compare by "dataSourceOrder" first,
     // to ensure that picking results are sorted according to their layers.
     // The bigger "dataSourceOrder" value is, the higher its stacked in the data model,
     // meaning the higher it should be appear in the resulting picking collection.
@@ -27,7 +27,7 @@ function defaultSort(lhs: PickResult, rhs: PickResult) {
         return rDataSourceOrder - lDataSourceOrder;
     }
 
-    // FLYWAVE-14553: Set a distance tolerance to ignore small distance differences between 2D objects
+    // ORBITFORGE-14553: Set a distance tolerance to ignore small distance differences between 2D objects
     // that are supposed to lie on the same plane.
     const eps = 1e-4;
     const distanceDiff = lhs.distance - rhs.distance;
@@ -153,7 +153,7 @@ export class PickListener {
             return;
         }
 
-        // FLYWAVE-14531: group zero-distance results first,
+        // ORBITFORGE-14531: group zero-distance results first,
         // as screen-space objects (e.g. labels) are currently rendered on top.
         const zeroDistanceGroup: PickResult[] = [];
         const nonZeroDistanceGroup: PickResult[] = [];

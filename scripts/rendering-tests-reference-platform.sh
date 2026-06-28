@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #
-# Run flywave.gl rendering tests (see [../test/README.md]) on reference platform i.e
+# Run OrbitForge rendering tests (see [../test/README.md]) on reference platform i.e
 #
 #   Headless Chrome 80 on Linux with GPU disabled
 #
@@ -24,7 +24,7 @@ else
 fi
 
 npx ts-node -- ./scripts/with-http-server.ts \
-    -r ../@flywave/flywave-test-utils/src/rendering/RenderingTestResultServer.ts \
+    -r ../@orbitforge/orbitforge-test-utils/src/rendering/RenderingTestResultServer.ts \
     -C dist/test \
     -p 7777 \
     -- \

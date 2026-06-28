@@ -553,7 +553,7 @@ export class Tile implements CachedResource {
         this.textElementGroups.add(textElement);
 
         if (this.m_textElementsChanged === false) {
-            // FLYWAVE-8733: Clone all groups so that they are handled as new element groups
+            // ORBITFORGE-8733: Clone all groups so that they are handled as new element groups
             // by TextElementsRenderer and it doesn't try to reuse the same state stored
             // for the old groups.
             this.m_textElementGroups = this.textElementGroups.clone();
@@ -590,7 +590,7 @@ export class Tile implements CachedResource {
             return false;
         }
         if (this.m_textElementsChanged === false) {
-            // FLYWAVE-8733: Clone all groups so that they are handled as new element groups
+            // ORBITFORGE-8733: Clone all groups so that they are handled as new element groups
             // by TextElementsRenderer and it doesn't try to reuse the same state stored
             // for the old groups.
             this.m_textElementGroups = groups.clone();

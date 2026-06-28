@@ -13,7 +13,7 @@ import { Matrix4, Ray, Vector3 } from "three";
 
 import { load3DTiles } from "../src/loader";
 
-describe("Flywave3DTileRendererTest", function () {
+describe("OrbitForge3DTileRendererTest", function () {
     // it("B3DMLoaderTest-decode", async () => {
     //     let tilesLoadingManager = new TilesLoadingManager();
 

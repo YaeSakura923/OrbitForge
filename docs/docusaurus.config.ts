@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const path = require("path");
 const fs = require("fs");
 
-const flywavePath = path.resolve(__dirname, '../@orbitforge/orbitforge-gl/dist');
+const orbitforgePath = path.resolve(__dirname, '../@orbitforge/orbitforge-gl/dist');
 const examplesPath = path.resolve(__dirname, '../@orbitforge/orbitforge-examples/resources/');
 const examplesSrcPath = path.resolve(__dirname, '../@orbitforge/orbitforge-examples/src/real-world-ecological-farming');
 const examplesSrcPath3dtilesAnimation = path.resolve(__dirname, '../@orbitforge/orbitforge-examples/src/3dtiles-animation');
@@ -74,7 +74,7 @@ const config: Config = {
     // Update staticDirectories configuration
     staticDirectories: [
         "./static",  // Ensure static directory is included
-        flywavePath, 
+        orbitforgePath, 
         examplesPath,
         // Keep root directory mapping (if needed)
         examplesSrcPath, 

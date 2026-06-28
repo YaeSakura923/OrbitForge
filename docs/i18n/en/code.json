@@ -343,7 +343,7 @@
     "message": "Powerful Features"
   },
   "homepage.features.subtitle": {
-    "message": "Flywave.gl provides comprehensive 3D map rendering capabilities, designed for high-performance visualization"
+    "message": "OrbitForge provides comprehensive 3D map rendering capabilities, designed for high-performance visualization"
   },
   "homepage.features.tile3d.title": {
     "message": "3D Tiles & Terrain Data",

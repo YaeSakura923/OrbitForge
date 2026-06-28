@@ -490,7 +490,7 @@ export class OmvDataAdapter implements DataAdapter, OmvVisitor {
                 } else if (isClosePathCommand(command)) {
                     if (currentRing !== undefined && currentRing.length > 0) {
                         const currentRingWinding = Math.sign(ShapeUtils.area(currentRing));
-                        // Winding order from XYZ spaces might be not MVT spec compliant, see FLYWAVE-11151.
+                        // Winding order from XYZ spaces might be not MVT spec compliant, see ORBITFORGE-11151.
                         // We take the winding of the very first ring as reference.
                         if (exteriorWinding === undefined) {
                             exteriorWinding = currentRingWinding;

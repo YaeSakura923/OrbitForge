@@ -395,7 +395,7 @@
     "message": "强大特性"
   },
   "homepage.features.subtitle": {
-    "message": "Flywave.gl 提供全面的 3D 地图渲染能力，专为高性能可视化设计"
+    "message": "OrbitForge 提供全面的 3D 地图渲染能力，专为高性能可视化设计"
   },
   "homepage.features.tile3d.title": {
     "message": "3D Tiles & 地形数据"

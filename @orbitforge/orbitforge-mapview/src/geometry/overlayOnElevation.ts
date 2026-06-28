@@ -139,7 +139,7 @@ export function overlayOnElevation(tile: Tile): void {
         return;
     }
 
-    // TODO: FLYWAVE-8808 Apply displacement maps once per material.
+    // TODO: ORBITFORGE-8808 Apply displacement maps once per material.
     for (const object of tile.objects) {
         overlayObject(object, displacementMap);
     }

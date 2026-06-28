@@ -37,7 +37,7 @@ export function stubPoiRenderer(
             opacity: number,
             env: Env
         ) => {
-            // TODO: FLYWAVE-7648 Refactor PoiRenderer.renderPoi, to take out
+            // TODO: ORBITFORGE-7648 Refactor PoiRenderer.renderPoi, to take out
             // bbox computation(already done during placement) and screen allocation (should
             // be done during placement instead).
             const bbox = new Math2D.Box();

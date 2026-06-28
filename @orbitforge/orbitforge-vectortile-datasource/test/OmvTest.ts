@@ -19,7 +19,7 @@ import {
  * Until we have some proper mock datasources, the OmvFeatureFilter/OmvFeatureModifier tests here
  * are more a collection of sample code. Also, the datasources cannot be instantiated here...
  *
- * FIXME: FLYWAVE-1152 Add unit tests for filter
+ * FIXME: ORBITFORGE-1152 Add unit tests for filter
  */
 
 export class RoadFilter implements OmvFeatureFilter {
@@ -85,7 +85,7 @@ export class RoadsToRailroads implements OmvFeatureModifier {
 }
 
 /**
- * FIXME: FLYWAVE-1152 Add unit tests for OmvFeatureFilterDescriptionBuilder
+ * FIXME: ORBITFORGE-1152 Add unit tests for OmvFeatureFilterDescriptionBuilder
  */
 describe("OmvFeatureFilterDescriptionBuilder", function () {
     it("setup", function () {

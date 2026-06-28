@@ -139,7 +139,7 @@ const getActualDecoderScriptUrl = () => {
 /**
  * Guess decoder script URL.
  *
- * Assumes that decoder script - `FLYWAVE-decoders.js` is in same place as main bundle and calculates
+ * Assumes that decoder script - `ORBITFORGE-decoders.js` is in same place as main bundle and calculates
  * it's URL.
  *
  * Minified version of `orbitforge.js` bundle loads minified version of decoder.

@@ -18,7 +18,7 @@ import * as EXT_mesh_gpu_instancing from "../extensions/EXT_mesh_gpu_instancing"
 import * as EXT_meshopt_compression from "../extensions/EXT_meshopt_compression";
 import * as EXT_structural_metadata from "../extensions/EXT_structural_metadata";
 import * as EXT_texture_webp from "../extensions/EXT_texture_webp";
-import * as FLYWAVE_bim4d_metadata from "../extensions/FLYWAVE_bim4d_metadata";
+import * as ORBITFORGE_bim4d_metadata from "../extensions/ORBITFORGE_bim4d_metadata";
 import * as KHR_draco_mesh_compression from "../extensions/KHR_draco_mesh_compression";
 import * as KHR_mesh_quantization from "../extensions/KHR_mesh_quantization";
 import * as KHR_texture_basisu from "../extensions/KHR_texture_basisu";
@@ -65,7 +65,7 @@ export const EXTENSIONS: GLTFExtensionPlugin[] = [
     KHR_mesh_quantization,
     EXT_feature_metadata,
     EXT_mesh_gpu_instancing,
-    FLYWAVE_bim4d_metadata
+    ORBITFORGE_bim4d_metadata
 ];
 
 /**

@@ -321,7 +321,7 @@ export class TileGeometryCreator {
 
         this.createLabelRejectionElements(tile, decodedTile);
 
-        // FLYWAVE-7899, disable ground plane for globe
+        // ORBITFORGE-7899, disable ground plane for globe
         if (tile.dataSource.addGroundPlane && tile.projection.type === ProjectionType.Planar) {
             // The ground plane is required for when we zoom in and we fall back to the parent
             // (whilst the new tiles are loading), in that case the ground plane ensures that the

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-const FlywaveGlobe = () => {
+const OrbitForgeGlobe = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -11,7 +11,7 @@ const FlywaveGlobe = () => {
     iframe.style.width = '450px';
     iframe.style.height = '450px';
     iframe.style.border = 'none';
-    iframe.setAttribute('title', 'Flywave Globe Preview');
+    iframe.setAttribute('title', 'OrbitForge Globe Preview');
     iframe.style.display = 'block';
     iframe.style.background = 'transparent';
     iframe.style.overflow = 'hidden';
@@ -64,7 +64,7 @@ const FlywaveGlobe = () => {
       <body>
         <canvas id="mapCanvas"></canvas>
         <script type="module">
-          window.FLYWAVE_BASE_URL = "${baseUrl}/";
+          window.ORBITFORGE_BASE_URL = "${baseUrl}/";
           import {
             MapView,
             GeoCoordinates, 
@@ -153,4 +153,4 @@ const FlywaveGlobe = () => {
   return <div ref={containerRef} className="globe-container" />;
 };
 
-export default FlywaveGlobe;
+export default OrbitForgeGlobe;

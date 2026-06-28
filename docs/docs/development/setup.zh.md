@@ -64,7 +64,7 @@ pnpm --version
 
 ```bash
 # 克隆项目仓库
-git clone https://github.com/flywave/OrbitForge.git
+git clone https://github.com/YaeSakura923/OrbitForge.git
 cd OrbitForge
 ```
 

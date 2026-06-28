@@ -102,7 +102,7 @@ describe("MapView + OmvDataSource + GeoJsonDataProvider rendering test", functio
                 renderOrder: 10000,
                 // select the color based on the the value of the dynamic property `correct`.
                 color: "#BC002D",
-                // This causes the bug FLYWAVE-12247
+                // This causes the bug ORBITFORGE-12247
                 enabled: ["get", "enabled", ["dynamic-properties"]],
                 size: ["get", "size", ["dynamic-properties"]]
             }

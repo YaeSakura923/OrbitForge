@@ -78,7 +78,7 @@ export class DisplacedMesh extends THREE.Mesh {
         super(geometry, material);
     }
 
-    // FLYWAVE-9585: Override of base class method, however tslint doesn't recognize it as such.
+    // ORBITFORGE-9585: Override of base class method, however tslint doesn't recognize it as such.
     raycast(raycaster: THREE.Raycaster, intersects: THREE.Intersection[]): void {
         // All materials in the object are expected to have the same displacement map.
         const firstMaterial = this.firstMaterial;

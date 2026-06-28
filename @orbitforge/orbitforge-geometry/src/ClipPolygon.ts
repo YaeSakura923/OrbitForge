@@ -116,7 +116,7 @@ class RightClippingEdge extends ClippingEdge {
     /**
      * @override
      *
-     * See: FLYWAVE-14633, this should potentially be changed to < as it was previously.
+     * See: ORBITFORGE-14633, this should potentially be changed to < as it was previously.
      * However further investigation is needed to confirm this.
      */
     inside(point: Vector2, extent: number): boolean {

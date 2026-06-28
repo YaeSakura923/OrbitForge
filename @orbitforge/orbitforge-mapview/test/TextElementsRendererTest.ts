@@ -248,7 +248,7 @@ const tests: TestCase[] = [
         collisionFrames: not(firstNFrames(FADE_2_CYCLES, 3))
     },
     {
-        // TODO: FLYWAVE-7649. Add fade out transitions for path labels.
+        // TODO: ORBITFORGE-7649. Add fade out transitions for path labels.
         name: "Least prioritized from two colliding persistent path texts fades out",
         tiles: [
             {

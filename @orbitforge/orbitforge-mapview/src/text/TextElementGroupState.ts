@@ -38,7 +38,7 @@ export class TextElementGroupState {
         this.m_textElementStates = [];
         this.m_visited = true;
 
-        // TODO: FLYWAVE-7648. Reduce number of allocations here:
+        // TODO: ORBITFORGE-7648. Reduce number of allocations here:
         // a) Avoid creating the state for labels that don't pass early placement checks and make
         //    this checks more strict.
         // b) Break label state objects into a set of arrays held at group level, one for each

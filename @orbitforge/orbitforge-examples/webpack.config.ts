@@ -12,7 +12,7 @@ import {
     createBaseConfig, 
     createDecoderConfig, 
     createAssetsConfig,
-    FlywaveWebpackConfig
+    OrbitForgeWebpackConfig
 } from "@orbitforge/orbitforge-webpack-utils/scripts/WebpackConfig";
 
 const require = createRequire(import.meta.url);
@@ -65,7 +65,7 @@ function getCacheConfig(name: string): CacheConfig | false {
 }
 
 // 定义orbitforge-webpack-utils配置
-const orbitforgeConfig: FlywaveWebpackConfig = {
+const orbitforgeConfig: OrbitForgeWebpackConfig = {
     tsConfigPath: path.join(__dirname, "tsconfig.json"),
     projectRoot: path.resolve(__dirname, '../../'),
     enableTsconfigPaths: true,
@@ -92,7 +92,7 @@ const commonConfig: Configuration = merge(createBaseConfig(orbitforgeConfig), {
     plugins: [
         new webpack.DefinePlugin({
             THEMES: JSON.stringify(themeList),
-            FLYWAVE_BASE_URL: JSON.stringify("./"),
+            ORBITFORGE_BASE_URL: JSON.stringify("./"),
             CESIUM_ION_TOKEN: JSON.stringify(process.env.CESIUM_ION_TOKEN || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlOTFkYWMzNC1mYjI1LTRlYTYtYTc2ZS04NWI1MTU2OTVlMDYiLCJpZCI6Mzg2NzksImlhdCI6MTY0MTE5NTAyNn0.4xsIJgYTK81yhRu67GG0x2FMit6zpYFCWsvWSwiFVV4'),
         })
     ]

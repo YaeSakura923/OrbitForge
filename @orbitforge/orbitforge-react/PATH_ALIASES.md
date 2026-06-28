@@ -21,7 +21,7 @@
 }
 ```
 
-### Flywave 包别名映射
+### OrbitForge 包别名映射
 ```json
 {
   "compilerOptions": {
@@ -54,7 +54,7 @@
 
 ## 使用示例
 
-### Flywave 包导入的优势
+### OrbitForge 包导入的优势
 
 ```tsx
 // 现在可以直接导入源代码，实现更好的开发体验：
@@ -66,7 +66,7 @@ import { VectorTileDataSource } from "@orbitforge/orbitforge-vectortile-datasour
 // TypeScript 会直接引用源代码，提供更好的类型检查和开发体验
 ```
 
-### Flywave 包别名的优势
+### OrbitForge 包别名的优势
 
 1. **直接访问源代码** - 无需等待编译后的包，直接使用源代码
 2. **更好的类型检查** - TypeScript 可以直接检查依赖包的源代码

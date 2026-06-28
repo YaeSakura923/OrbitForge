@@ -42,7 +42,7 @@ export class PickingRaycaster extends THREE.Raycaster {
         super();
     }
 
-    // FLYWAVE-9585: Override of base class method, however tslint doesn't recognize overrides of
+    // ORBITFORGE-9585: Override of base class method, however tslint doesn't recognize overrides of
     // three.js classes.
     intersectObject<TIntersected extends THREE.Object3D>(
         object: THREE.Object3D,
@@ -56,7 +56,7 @@ export class PickingRaycaster extends THREE.Raycaster {
         return intersects;
     }
 
-    // FLYWAVE-9585: Override of base class method, however tslint doesn't recognize overrides of
+    // ORBITFORGE-9585: Override of base class method, however tslint doesn't recognize overrides of
     // three.js classes.
     intersectObjects<TIntersected extends THREE.Object3D>(
         objects: THREE.Object3D[],

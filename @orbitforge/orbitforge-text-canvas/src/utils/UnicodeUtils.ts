@@ -96,7 +96,7 @@ export namespace UnicodeUtils {
         RTL = -1.0
     }
 
-    // TODO: Review/Remove/Add any additional needed blocks (FLYWAVE-3330).
+    // TODO: Review/Remove/Add any additional needed blocks (ORBITFORGE-3330).
     /**
      * Unicode Blocks which have inherent RTL direction.
      * These blocks correspond to the scripts described here:

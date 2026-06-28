@@ -100,7 +100,7 @@ export class CirclePointsMaterial extends RawShaderMaterial {
             shaderParams.uniforms = THREE.UniformsUtils.merge([
                 {
                     size: new THREE.Uniform(CirclePointsMaterial.DEFAULT_CIRCLE_SIZE),
-                    // FLYWAVE-17373: Original uniform name 'diffuse' due to shader compilation
+                    // ORBITFORGE-17373: Original uniform name 'diffuse' due to shader compilation
                     // errors with Metal in Safari 15 on MacOS Monterrey and iPadOS 15.
                     diffuseColor: new THREE.Uniform(defaultColor),
                     opacity: new THREE.Uniform(defaultOpacity)

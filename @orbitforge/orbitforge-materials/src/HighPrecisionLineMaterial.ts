@@ -94,7 +94,7 @@ export class HighPrecisionLineMaterial extends RawShaderMaterial {
                   vertexShader: vertexSource,
                   fragmentShader: fragmentSource,
                   uniforms: {
-                      // FLYWAVE-17373: Original uniform name 'diffuse' due to shader compilation
+                      // ORBITFORGE-17373: Original uniform name 'diffuse' due to shader compilation
                       // errors with Metal in Safari 15 on MacOS Monterrey and iPadOS 15.
                       diffuseColor: new THREE.Uniform(
                           new THREE.Color(HighPrecisionLineMaterial.DEFAULT_COLOR)

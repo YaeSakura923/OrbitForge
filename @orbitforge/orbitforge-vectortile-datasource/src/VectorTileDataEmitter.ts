@@ -1564,7 +1564,7 @@ export class VectorTileDataEmitter {
                         edgeModifier.modify(geom);
                     }
 
-                    // FIXME(FLYWAVE-5700): Subdivision modifier ignores texture coordinates.
+                    // FIXME(ORBITFORGE-5700): Subdivision modifier ignores texture coordinates.
                     const modifier = new SphericalGeometrySubdivisionModifier(
                         THREE.MathUtils.degToRad(10),
                         webMercatorProjection
