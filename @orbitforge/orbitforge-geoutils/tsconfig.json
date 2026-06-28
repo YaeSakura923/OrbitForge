@@ -1,0 +1,22 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+        "composite": true,
+        "paths": {
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"],
+            "@orbitforge/orbitforge-kriging-gl": ["../orbitforge-kriging-gl/src"]
+        }
+    },
+    "include": ["src/**/*", "test/**/*"],
+    "exclude": ["dist/**", "node_modules"],
+    "references": [
+        {
+            "path": "../orbitforge-utils"
+        },
+        {
+            "path": "../orbitforge-kriging-gl"
+        }
+    ]
+}

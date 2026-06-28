@@ -1,0 +1,26 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+        "composite": true,
+        "paths": {
+            "@orbitforge/orbitforge-datasource-protocol": ["../orbitforge-datasource-protocol/src"],
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"],
+            "@orbitforge/orbitforge-geoutils": ["../orbitforge-geoutils/src"]
+        }
+    },
+    "include": ["src/**/*", "test/*"],
+    "exclude": ["dist/**", "node_modules"],
+    "references": [
+        {
+            "path": "../orbitforge-datasource-protocol"
+        },
+        {
+            "path": "../orbitforge-utils"
+        },
+        {
+            "path": "../orbitforge-geoutils"
+        }
+    ]
+}

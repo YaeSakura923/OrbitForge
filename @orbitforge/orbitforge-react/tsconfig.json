@@ -1,0 +1,16 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "composite": true,
+        "outDir": "./lib",
+        "rootDir": "./src",
+        "jsx": "react-jsx",
+        "paths": {
+            "@orbitforge/orbitforge": ["../orbitforge"],
+            "@orbitforge/orbitforge/*": ["../orbitforge/*"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["lib", "test"],
+    "references": [{ "path": "../orbitforge" }]
+}

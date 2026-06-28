@@ -1,0 +1,29 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+        "sourceMap": true,
+        "composite": true,
+        "incremental": true,
+        "declarationMap": true,
+        "paths": {
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"],
+            "@orbitforge/orbitforge-splats": ["../orbitforge-splats/src"],
+            "@orbitforge/orbitforge-draco": ["../orbitforge-draco/src"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["dist/**", "test/**", "node_modules"],
+    "references": [
+        {
+            "path": "../orbitforge-splats"
+        },
+        {
+            "path": "../orbitforge-utils"
+        },
+        {
+            "path": "../orbitforge-draco"
+        },
+    ]
+}

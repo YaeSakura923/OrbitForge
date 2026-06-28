@@ -1,0 +1,47 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+        "composite": true,
+        "paths": {
+            "@orbitforge/orbitforge-datasource-protocol": ["../orbitforge-datasource-protocol/src"],
+            "@orbitforge/orbitforge-vectortile-datasource": ["../orbitforge-vectortile-datasource/src"],
+            "@orbitforge/orbitforge-geometry": ["../orbitforge-geometry/src"],
+            "@orbitforge/orbitforge-geoutils": ["../orbitforge-geoutils/src"],
+            "@orbitforge/orbitforge-lrucache": ["../orbitforge-lrucache/src"],
+            "@orbitforge/orbitforge-mapview": ["../orbitforge-mapview/src"],
+            "@orbitforge/orbitforge-mapview/*": ["../orbitforge-mapview/src/*"],
+            "@orbitforge/orbitforge-materials": ["../orbitforge-materials/src"],
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"]
+        }
+    },
+    "include": ["src/**/*.ts", "test/**/*.ts"],
+    "exclude": ["dist/**", "node_modules"],
+    "references": [
+        {
+            "path": "../orbitforge-datasource-protocol"
+        },
+        {
+            "path": "../orbitforge-vectortile-datasource"
+        },
+        {
+            "path": "../orbitforge-geometry"
+        },
+        {
+            "path": "../orbitforge-geoutils"
+        },
+        {
+            "path": "../orbitforge-lrucache"
+        },
+        {
+            "path": "../orbitforge-mapview"
+        },
+        {
+            "path": "../orbitforge-materials"
+        },
+        {
+            "path": "../orbitforge-utils"
+        }
+    ]
+}

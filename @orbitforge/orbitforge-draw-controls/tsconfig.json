@@ -1,0 +1,50 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+        "composite": true,
+        "sourceMap": true,
+        "declarationMap": true,
+        "paths": {
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"],
+            "@orbitforge/orbitforge-geoutils": ["../orbitforge-geoutils/src"],
+            "@orbitforge/orbitforge-geoutils/*": ["../orbitforge-geoutils/src/*"],
+            "@orbitforge/orbitforge-mapview": ["../orbitforge-mapview/src"],
+            "@orbitforge/orbitforge-mapview/*": ["../orbitforge-mapview/src/*"],
+            "@orbitforge/orbitforge-test-utils": ["../orbitforge-test-utils/src"],
+            "@orbitforge/orbitforge-test-utils/*": ["../orbitforge-test-utils/src/*"],
+            "@orbitforge/orbitforge-map-controls": ["../orbitforge-map-controls/src"],
+            "@orbitforge/orbitforge-map-controls/*": ["../orbitforge-map-controls/src/*"],
+            "@orbitforge/orbitforge-datasource-protocol": ["../orbitforge-datasource-protocol/src"],
+            "@orbitforge/orbitforge-datasource-protocol/*": ["../orbitforge-datasource-protocol/src/*"],
+            "@orbitforge/orbitforge-text-canvas": ["../orbitforge-text-canvas/src"],
+            "@orbitforge/orbitforge-text-canvas/*": ["../orbitforge-text-canvas/src/*"]
+        }
+    },
+    "include": ["src/**/*", "test/**/*"],
+    "exclude": ["dist/**", "node_modules"],
+    "references": [
+        {
+            "path": "../orbitforge-geoutils"
+        },
+        {
+            "path": "../orbitforge-mapview"
+        },
+        {
+            "path": "../orbitforge-utils"
+        },
+        {
+            "path": "../orbitforge-test-utils"
+        },
+        {
+            "path": "../orbitforge-map-controls"
+        },
+        {
+            "path": "../orbitforge-datasource-protocol"
+        },
+        {
+            "path": "../orbitforge-text-canvas"
+        }
+    ]
+}

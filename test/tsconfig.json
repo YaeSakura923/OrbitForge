@@ -1,0 +1,25 @@
+{
+    "extends": "../tsconfig.karma.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "sourceMap": true,
+        "composite": true,
+        "incremental": true,
+        "declarationMap": true,
+        "paths": {
+            "@orbitforge/orbitforge-datasource-protocol": ["../@orbitforge/orbitforge-datasource-protocol/src"],
+            "@orbitforge/orbitforge-datasource-protocol/*": [
+                "../@orbitforge/orbitforge-datasource-protocol/src/*"
+            ],
+            "@orbitforge/orbitforge-test-utils": ["../@orbitforge/orbitforge-test-utils/src"],
+            "@orbitforge/orbitforge-test-utils/*": ["../@orbitforge/orbitforge-test-utils/src/*"]
+        }
+    },
+    "include": ["./ImportTest.ts"],
+    "exclude": ["dist/**", "node_modules"],
+    "references": [
+        {
+            "path": "../@orbitforge/orbitforge-datasource-protocol"
+        }
+    ]
+}

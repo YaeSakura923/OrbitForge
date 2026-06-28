@@ -1,0 +1,55 @@
+{
+    "name": "@orbitforge/orbitforge-atlas-tools",
+    "version": "0.0.1",
+    "description": "Sprites and texture atlas generator for orbitforge maps",
+    "main": "lib/index.js",
+    "bin": {
+        "orbitforge-atlas-generator": "lib/cli-atlas-generator.js",
+        "orbitforge-sprites-generator": "lib/cli-sprites-generator.js"
+    },
+    "scripts": {
+        "build": "cross-env tsc --build $EXTRA_TSC_ARGS",
+        "watch": "cross-env tsc --build -w",
+        "generateAtlas": "cross-env ts-node src/cli-atlas-generator.ts",
+        "generateSprites": "ts-node src/cli-sprites-generator.ts",
+        "test": "pnpm build && pnpm generateAtlas",
+        "prepare": "cross-env tsc --build $EXTRA_TSC_ARGS --force"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/YaeSakura923/orbitforge.git",
+        "directory": "@orbitforge/orbitforge-atlas-tools"
+    },
+    "author": {
+        "name": "orbitforge contributors",
+        "url": "https://orbitforge.dev"
+    },
+    "license": "Apache-2.0",
+    "keywords": [
+        "here",
+        "orbitforge",
+        "theme",
+        "icons",
+        "sprites",
+        "texture-atlas",
+        "sprites-atlas",
+        "atlas-generator"
+    ],
+    "dependencies": {
+        "@types/mkpath": "catalog:",
+        "@types/sharp": "catalog:",
+        "commander": "catalog:",
+        "glob": "catalog:",
+        "jimp": "catalog:",
+        "mkpath": "catalog:",
+        "path": "catalog:",
+        "promise-limit": "catalog:",
+        "sharp": "catalog:",
+        "spritesmith": "catalog:"
+    },
+    "devDependencies": {
+        "ts-node": "catalog:",
+        "typescript": "catalog:"
+    },
+    "private": true
+}

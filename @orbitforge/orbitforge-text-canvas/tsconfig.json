@@ -1,0 +1,22 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+        "composite": true,
+        "paths": {
+            "@orbitforge/orbitforge-lrucache": ["../orbitforge-lrucache/src"],
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"]  
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["dist/**", "test/**", "node_modules"],
+    "references": [
+        {
+            "path": "../orbitforge-lrucache"
+        },
+        {
+            "path": "../orbitforge-utils"
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "name": "@orbitforge/orbitforge",
+    "version": "0.0.11",
+    "type": "module",
+    "description": "WebGl GIS",
+    "exports": {
+        ".": {
+            "import": "./dist/orbitforge.module.js",
+            "require": "./dist/orbitforge.cjs.js",
+            "types": "./dist/orbitforge.d.ts"
+        },
+        "./package.json": "./package.json",
+        "./decoder": {
+            "import": "./dist/orbitforge-decoders.js",
+            "require": "./dist/orbitforge-decoders.js"
+        }
+    },
+    "typesVersions": {
+        "*": {
+            "*": [
+                "./dist/orbitforge.d.ts"
+            ]
+        }
+    },
+    "files": [
+        "dist/**/*",
+        "README.md"
+    ],
+    "scripts": {
+        "tsc": "tsc --build",
+        "build": "webpack --mode production && npm run build-typings",
+        "prepare": "webpack --mode production && npm run build-typings",
+        "build-typings": "tsc --build && api-extractor run --local && node -e \"const fs = require('fs'); fs.appendFileSync('dist/orbitforge.d.ts', 'export as namespace orbitforge;\\n'); if(fs.existsSync('temp')) fs.rmSync('temp', { recursive: true, force: true })\"",
+        "debug": "webpack"
+    },
+    "keywords": [
+        "3d",
+        "webgl",
+        "gis",
+        "map",
+        "geospatial"
+    ],
+    "author": "orbitforge",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/YaeSakura923/orbitforge#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/YaeSakura923/orbitforge.git"
+    },
+    "bugs": {
+        "url": "https://github.com/YaeSakura923/orbitforge/issues"
+    },
+    "peerDependencies": {
+        "three": ">= 0.169.0 < 0.182.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@orbitforge/orbitforge-3dtile-datasource": "workspace:*",
+        "@orbitforge/orbitforge-datasource-protocol": "workspace:*",
+        "@orbitforge/orbitforge-draw-controls": "workspace:*",
+        "@orbitforge/orbitforge-features-datasource": "workspace:*",
+        "@orbitforge/orbitforge-geojson-datasource": "workspace:*",
+        "@orbitforge/orbitforge-geometry": "workspace:*",
+        "@orbitforge/orbitforge-geoutils": "workspace:*",
+        "@orbitforge/orbitforge-gltf": "workspace:*",
+        "@orbitforge/orbitforge-inspector": "workspace:*",
+        "@orbitforge/orbitforge-map-controls": "workspace:*",
+        "@orbitforge/orbitforge-mapview": "workspace:*",
+        "@orbitforge/orbitforge-mapview-decoder": "workspace:*",
+        "@orbitforge/orbitforge-terrain-datasource": "workspace:*",
+        "@orbitforge/orbitforge-transfer-manager": "workspace:*",
+        "@orbitforge/orbitforge-utils": "workspace:*",
+        "@orbitforge/orbitforge-vectortile-datasource": "workspace:*",
+        "@orbitforge/orbitforge-webpack-utils": "workspace:*",
+        "@orbitforge/orbitforge-webtile-datasource": "workspace:*",
+        "copy-webpack-plugin": "catalog:",
+        "cross-env": "catalog:",
+        "expose-loader": "5.0.1",
+        "tsconfig-paths-webpack-plugin": "catalog:",
+        "typescript": "catalog:",
+        "webpack": "catalog:",
+        "webpack-cli": "catalog:",
+        "webpack-merge": "catalog:"
+    },
+    "gitHead": "31ea639ccb9a06d4595f4325396c21ba4164c454"
+}

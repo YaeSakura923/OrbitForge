@@ -1,0 +1,53 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "declarationMap": false,
+        "sourceMap": false,
+        "composite": false,
+        "declaration": false,
+        "paths": {
+            "@orbitforge/orbitforge": [
+                "../orbitforge/src"
+            ],
+            "@orbitforge/orbitforge/*": [
+                "../orbitforge/src/*"
+            ],
+            "@orbitforge/orbitforge-map-controls": [
+                "../orbitforge-map-controls/src"
+            ],
+            "@orbitforge/orbitforge-map-controls/*": [
+                "../orbitforge-map-controls/src/*"
+            ],
+            "@orbitforge/orbitforge-draw-controls": [
+                "../orbitforge-draw-controls/src"
+            ],
+            "@orbitforge/orbitforge-draw-controls/*": [
+                "../orbitforge-draw-controls/src/*"
+            ],
+            "@orbitforge/orbitforge-geometry": [
+                "../orbitforge-geometry/src"
+            ],
+            "@orbitforge/orbitforge-geometry/*": [
+                "../orbitforge-geometry/src/*"
+            ],
+            "@orbitforge/orbitforge-examples/*": [
+                "./src/*"
+            ]
+        }
+    },
+    "include": [
+        "example-browser.ts",
+        "codebrowser.ts",
+        "src/**/*.ts",
+        "global.d.ts",
+        "decoder/**/*"
+    ],
+    "references": [
+        {
+            "path": "../orbitforge"
+        },
+        {
+            "path": "../orbitforge-geometry"
+        },
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+        "composite": true,
+        "paths": {
+            "@orbitforge/orbitforge-datasource-protocol": ["../orbitforge-datasource-protocol/src"],
+            "@orbitforge/orbitforge-datasource-protocol/*": ["../orbitforge-datasource-protocol/src/*"],
+            "@orbitforge/orbitforge-fetch": ["../orbitforge-fetch"],
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"],
+            "@orbitforge/orbitforge-lrucache": ["../orbitforge-lrucache/src"],
+            "@orbitforge/orbitforge-geoutils": ["../orbitforge-geoutils/src"],
+            "@orbitforge/orbitforge-mapview": ["../orbitforge-mapview/src"],
+            "@orbitforge/orbitforge-mapview/*": ["../orbitforge-mapview/src/*"]
+        }
+    },
+    "include": ["src/**/*", "test/**/*"],
+    "references": [
+        {
+            "path": "../orbitforge-datasource-protocol"
+        },
+        {
+            "path": "../orbitforge-fetch"
+        },
+        {
+            "path": "../orbitforge-geoutils"
+        },
+        {
+            "path": "../orbitforge-lrucache"
+        },
+        {
+            "path": "../orbitforge-mapview"
+        },
+        {
+            "path": "../orbitforge-utils"
+        }
+    ]
+}

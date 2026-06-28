@@ -1,0 +1,39 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+        "composite": true,
+        "sourceMap": true,
+        "declarationMap": true,
+        "paths": {
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"],
+            "@orbitforge/orbitforge-geoutils": ["../orbitforge-geoutils/src"],
+            "@orbitforge/orbitforge-geoutils/*": ["../orbitforge-geoutils/src/*"],
+            "@orbitforge/orbitforge-mapview": ["../orbitforge-mapview/src"],
+            "@orbitforge/orbitforge-mapview/*": ["../orbitforge-mapview/src/*"],
+            "@orbitforge/orbitforge-test-utils": ["../orbitforge-test-utils/src"],
+            "@orbitforge/orbitforge-3dtile-datasource": ["../orbitforge-3dtile-datasource/src"],
+            "@orbitforge/orbitforge-test-utils/*": ["../orbitforge-test-utils/src/*"]
+        }
+    },
+    "include": ["src/**/*", "test/**/*"],
+    "exclude": ["dist/**", "node_modules"],
+    "references": [
+        {
+            "path": "../orbitforge-geoutils"
+        },
+        {
+            "path": "../orbitforge-mapview"
+        },
+        {
+            "path": "../orbitforge-utils"
+        },
+        {
+            "path": "../orbitforge-3dtile-datasource"
+        },
+        {
+            "path": "../orbitforge-test-utils"
+        }
+    ]
+}

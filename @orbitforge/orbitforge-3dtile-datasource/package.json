@@ -1,0 +1,36 @@
+{
+    "name": "@orbitforge/orbitforge-3dtile-datasource",
+    "version": "0.0.1",
+    "description": "3D Tiles data source module for the orbitforge library",
+    "main": "lib/src/index.js",
+    "browser": "lib/src/index.js",
+    "typings": "lib/src/index.d.ts",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "cross-env mocha --require source-map-support/register $EXTRA_MOCHA_ARGS ./test/*.js",
+        "build": "cross-env tsc --build $EXTRA_TSC_ARGS --force",
+        "prepare": "cross-env tsc --build $EXTRA_TSC_ARGS"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/YaeSakura923/orbitforge.git",
+        "directory": "@orbitforge/orbitforge-3dtile-datasource"
+    },
+    "author": {
+        "name": "orbitforge contributors",
+        "url": "https://orbitforge.dev"
+    },
+    "license": "Apache-2.0",
+    "dependencies": {
+        "long": "^5.0.0",
+        "path-browserify": "^1.0.1"
+    },
+    "devDependencies": {
+        "@types/chai-as-promised": "^8.0.2",
+        "@types/path-browserify": "^1.0.3",
+        "cross-env": "catalog:"
+    },
+    "private": true
+}

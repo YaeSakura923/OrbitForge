@@ -1,0 +1,83 @@
+name: Publish Package
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Verify npm authentication
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
+          npm whoami || echo "Authentication check failed"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+  
+      - name: Determine publish tag
+        id: tag-check
+        run: |
+          TAG=${GITHUB_REF#refs/tags/}
+          if [[ $TAG == test-* ]]; then
+            echo "PUBLISH_TAG=test" >> $GITHUB_OUTPUT
+            echo "VERSION_TAG=--tag test" >> $GITHUB_OUTPUT
+          elif [[ $TAG == draft-* ]]; then
+            echo "PUBLISH_TAG=draft" >> $GITHUB_OUTPUT
+            echo "VERSION_TAG=--tag draft" >> $GITHUB_OUTPUT
+          else
+            echo "PUBLISH_TAG=latest" >> $GITHUB_OUTPUT
+            echo "VERSION_TAG=" >> $GITHUB_OUTPUT
+          fi
+          echo "Tag determined: $TAG"
+
+      - name: Publish to npm (conditional)
+        if: success()
+        run: |
+          echo "Publishing with tag: ${{ steps.tag-check.outputs.PUBLISH_TAG }}" 
+          pnpm run publish-from-git
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+
+  create-release:
+    needs: publish-npm
+    if: success()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Release ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
+          draft: ${{ startsWith(github.ref_name, 'draft-') }}
+          prerelease: ${{ startsWith(github.ref_name, 'test-') || startsWith(github.ref_name, 'draft-') }}
+          generate_release_notes: true

@@ -1,0 +1,41 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+        "composite": true,
+        "paths": {
+            "@orbitforge/orbitforge-mapview": ["../orbitforge-mapview/src/index.ts"],
+            "@orbitforge/orbitforge-mapview/*": ["../orbitforge-mapview/src/*"],
+            "@orbitforge/orbitforge-vectortile-datasource": [
+                "../orbitforge-vectortile-datasource/src/index.ts"
+            ],
+            "@orbitforge/orbitforge-vectortile-datasource/*": ["../orbitforge-vectortile-datasource/src/*"],
+            "@orbitforge/orbitforge-terrain-datasource": ["../orbitforge-terrain-datasource/src/index.ts"],
+            "@orbitforge/orbitforge-terrain-datasource/*": ["../orbitforge-terrain-datasource/src/*"],
+            "@orbitforge/orbitforge-datasource-protocol": ["../orbitforge-datasource-protocol/src/index.ts"],
+            "@orbitforge/orbitforge-datasource-protocol/*": ["../orbitforge-datasource-protocol/src/*"],
+            "@orbitforge/orbitforge-geoutils": ["../orbitforge-geoutils/src/index.ts"],
+            "@orbitforge/orbitforge-geoutils/*": ["../orbitforge-geoutils/src/*"],
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["dist", "node_modules", "**/test/**/*", "**/*.spec.ts"],
+    "references": [
+        {
+            "path": "../orbitforge-mapview"
+        },
+        {
+            "path": "../orbitforge-vectortile-datasource"
+        },
+        {
+            "path": "../orbitforge-terrain-datasource"
+        },
+        {
+            "path": "../orbitforge-geoutils"
+        },
+        {
+            "path": "../orbitforge-datasource-protocol"
+        }
+    ]
+}

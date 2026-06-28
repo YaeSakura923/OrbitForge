@@ -1,0 +1,49 @@
+{
+    "name": "@orbitforge/orbitforge-react",
+    "version": "0.0.1",
+    "description": "React wrapper for orbitforge MapView with context provider",
+    "main": "lib/index.js",
+    "module": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "private": true,
+    "exports": {
+        ".": {
+            "import": "./lib/index.js",
+            "require": "./lib/index.js",
+            "types": "./lib/index.d.ts"
+        },
+        "./package.json": "./package.json"
+    },
+    "license": "Apache-2.0",
+    "author": {
+        "name": "orbitforge contributors",
+        "url": "https://orbitforge.dev"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/YaeSakura923/orbitforge.git",
+        "directory": "@orbitforge/orbitforge-react"
+    },
+    "engines": {
+        "node": ">=10.5.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "cross-env tsc --build $EXTRA_TSC_ARGS",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "test:ui": "vitest --ui"
+    },
+    "dependencies": {},
+    "peerDependencies": {
+        "react": ">=16.8.0",
+        "react-dom": ">=16.8.0"
+    },
+    "devDependencies": {},
+    "typings": "lib/index.d.ts",
+    "files": [
+        "lib/**/*"
+    ]
+}

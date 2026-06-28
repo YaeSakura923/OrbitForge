@@ -1,0 +1,109 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "composite": true,
+        "module": "es2015",
+        "target": "es2015",
+        "paths": {
+            "@orbitforge/orbitforge-datasource-protocol": ["./@orbitforge/orbitforge-datasource-protocol/src"],
+            "@orbitforge/orbitforge-datasource-protocol/*": [
+                "./@orbitforge/orbitforge-datasource-protocol/src/*"
+            ],
+            "@orbitforge/orbitforge-vectortile-datasource": [
+                "./@orbitforge/orbitforge-vectortile-datasource/src"
+            ],
+            "@orbitforge/orbitforge-vectortile-datasource/*": [
+                "./@orbitforge/orbitforge-vectortile-datasource/src/*"
+            ],
+            "@orbitforge/orbitforge-fetch": ["./@orbitforge/orbitforge-fetch/src"],
+            "@orbitforge/orbitforge-geometry": ["./@orbitforge/orbitforge-geometry/src"],
+            "@orbitforge/orbitforge-geometry/*": ["./@orbitforge/orbitforge-geometry/src/*"],
+            "@orbitforge/orbitforge-geoutils": ["./@orbitforge/orbitforge-geoutils/src"],
+            "@orbitforge/orbitforge-geoutils/*": ["./@orbitforge/orbitforge-geoutils/src/*"],
+            "@orbitforge/orbitforge-lines": ["./@orbitforge/orbitforge-lines/src"],
+            "@orbitforge/orbitforge-lines/*": ["./@orbitforge/orbitforge-lines/src/*"],
+            "@orbitforge/orbitforge-lrucache": ["./@orbitforge/orbitforge-lrucache/src"],
+            "@orbitforge/orbitforge-materials": ["./@orbitforge/orbitforge-materials/src"],
+            "@orbitforge/orbitforge-materials/*": ["./@orbitforge/orbitforge-materials/src/*"],
+            "@orbitforge/orbitforge-text-canvas": ["./@orbitforge/orbitforge-text-canvas/src"],
+            "@orbitforge/orbitforge-text-canvas/*": ["./@orbitforge/orbitforge-text-canvas/src/*"],
+            "@orbitforge/orbitforge-transfer-manager": ["./@orbitforge/orbitforge-transfer-manager/src"],
+            "@orbitforge/orbitforge-utils": ["./@orbitforge/orbitforge-utils/src"],
+            "@orbitforge/orbitforge-mapview": ["./@orbitforge/orbitforge-mapview/src"],
+            "@orbitforge/orbitforge-mapview/*": ["./@orbitforge/orbitforge-mapview/src/*"],
+            "@orbitforge/orbitforge-mapview-decoder": ["./@orbitforge/orbitforge-mapview-decoder/src"],
+            "@orbitforge/orbitforge-mapview-decoder/*": ["./@orbitforge/orbitforge-mapview-decoder/src/*"],
+            "@orbitforge/orbitforge-webtile-datasource": ["./@orbitforge/orbitforge-webtile-datasource/src"],
+            "@orbitforge/orbitforge-webtile-datasource/*": [
+                "./@orbitforge/orbitforge-webtile-datasource/src/*"
+            ],
+            "@orbitforge/orbitforge-test-utils": ["./@orbitforge/orbitforge-test-utils/src/index.web.ts"],
+            "@orbitforge/orbitforge-test-utils/*": ["./@orbitforge/orbitforge-test-utils/src/*"],
+            "@orbitforge-orbitforge-draco": ["./@orbitforge-orbitforge-draco/src"],
+            "@orbitforge-orbitforge-gltf": ["./@orbitforge-orbitforge-gltf/src"],
+            "@orbitforge-orbitforge-gltf/*": ["./@orbitforge-orbitforge-gltf/src/*"],
+            "@orbitforge-orbitforge-draco/*": ["./@orbitforge-orbitforge-draco/src/*"]
+        }
+    },
+    "include": ["@orbitforge/**/*.ts"],
+    "exclude": [
+        "**/node_modules/**",
+        "@orbitforge/generator-orbitforge-gl",
+        "@orbitforge/orbitforge-examples",
+        "@orbitforge/orbitforge-gl/**"
+    ]
+    // "references": [
+    //     {
+    //         "path": "./@orbitforge/orbitforge-datasource-protocol"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-fetch"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-geometry"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-geoutils"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-lines"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-lrucache"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-materials"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-text-canvas"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-transfer-manager"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-utils"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-mapview"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-mapview-decoder"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-vectortile-datasource"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-webtile-datasource"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-test-utils"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-map-controls"
+    //     },
+    //     {
+    //         "path": "./@orbitforge/orbitforge-gl"
+    //     }
+    // ]
+}

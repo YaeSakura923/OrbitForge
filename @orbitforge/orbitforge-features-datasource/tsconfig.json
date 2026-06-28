@@ -1,0 +1,41 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+        "sourceMap": true,
+        "composite": true,
+        "incremental": true,
+        "declarationMap": true,
+        "paths": {
+            "@orbitforge/orbitforge-datasource-protocol": ["../orbitforge-datasource-protocol/src"],
+            "@orbitforge/orbitforge-geojson-datasource": ["../orbitforge-geojson-datasource/src"],
+            "@orbitforge/orbitforge-geoutils": ["../orbitforge-geoutils/src"],
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"],
+            "@orbitforge/orbitforge-vectortile-datasource": ["../orbitforge-vectortile-datasource/src"],
+            "@orbitforge/orbitforge-mapview": ["../orbitforge-mapview/src"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["dist/**", "test/**", "node_modules"],
+    "references": [
+        {
+            "path": "../orbitforge-datasource-protocol"
+        },
+        {
+            "path": "../orbitforge-geojson-datasource"
+        },
+        {
+            "path": "../orbitforge-geoutils"
+        },
+        {
+            "path": "../orbitforge-mapview"
+        },
+        {
+            "path": "../orbitforge-vectortile-datasource"
+        },
+        {
+            "path": "../orbitforge-utils"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "sourceMap": true,
+        "composite": true,
+        "incremental": true,
+        "declarationMap": true,
+        "paths": {
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["dist/**", "test/**", "node_modules"],
+    "references": [
+        {
+            "path": "../orbitforge-transfer-manager"
+        },
+        {
+            "path": "../orbitforge-utils"
+        }
+    ]
+}

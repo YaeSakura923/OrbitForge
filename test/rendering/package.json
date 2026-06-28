@@ -1,0 +1,29 @@
+{
+    "name": "@orbitforge/orbitforge-rendering-test",
+    "version": "0.28.0",
+    "private": true,
+    "author": {
+        "name": "HERE Europe B.V.",
+        "url": "https://here.com"
+    },
+    "scripts": {
+        "build": "\n"
+    },
+    "devDependencies": {
+        "@orbitforge/orbitforge-datasource-protocol": "^0.28.0",
+        "@orbitforge/orbitforge-debug-datasource": "^0.28.0",
+        "@orbitforge/orbitforge-features-datasource": "^0.28.0",
+        "@orbitforge/orbitforge-geojson-datasource": "^0.28.0",
+        "@orbitforge/orbitforge-geoutils": "^0.28.0",
+        "@orbitforge/orbitforge-mapview": "^0.28.0",
+        "@orbitforge/orbitforge-mapview-decoder": "^0.28.0",
+        "@orbitforge/orbitforge-test-utils": "^0.28.0",
+        "@orbitforge/orbitforge-utils": "^0.28.0",
+        "@orbitforge/orbitforge-vectortile-datasource": "^0.28.0",
+        "@types/chai": "^4.2.14",
+        "@types/three": "^0.129.0",
+        "chai": "^4.2.0",
+        "three": "^0.129.0"
+    },
+    "license": "Apache-2.0"
+}

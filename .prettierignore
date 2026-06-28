@@ -1,0 +1,12 @@
+@orbitforge/orbitforge-vectortile-datasource/lib/adapters/omv/proto/vector_tile.d.ts
+@orbitforge/orbitforge-vectortile-datasource/lib/adapters/omv/proto/vector_tile.js
+@orbitforge/orbitforge-datasource-protocol/theme.schema.json
+@orbitforge/orbitforge-map-theme/resources/fonts/
+@orbitforge/orbitforge-text-canvas/resources/fonts/
+dist/
+.nyc_output/
+coverage/
+lerna.json
+.github/workflows
+.vscode/
+.history

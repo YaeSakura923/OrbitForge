@@ -1,0 +1,48 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+        "composite": true,
+        "paths": {
+            "@orbitforge/orbitforge-geoutils": ["../orbitforge-geoutils/src"],
+            "@orbitforge/orbitforge-geoutils/*": ["../orbitforge-geoutils/src/*"],
+            "@orbitforge/orbitforge-mapview": ["../orbitforge-mapview/src"],
+            "@orbitforge/orbitforge-mapview/*": ["../orbitforge-mapview/src/*"],
+            "@orbitforge/orbitforge-utils/*": ["../orbitforge-utils/src/*"],
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"],
+            "@orbitforge/orbitforge-draco": ["../orbitforge-draco/src"],
+            "@orbitforge/orbitforge-draco/*": ["../orbitforge-draco/src/*"],
+            "@orbitforge/orbitforge-gltf": ["../orbitforge-gltf/src"],
+            "@orbitforge/orbitforge-gltf/*": ["../orbitforge-gltf/src/*"],
+            "@orbitforge/orbitforge-splats": ["../../orbitforge-splats/src"],
+            "@orbitforge/orbitforge-datasource-protocol": ["../orbitforge-datasource-protocol/src"],
+            "@orbitforge/orbitforge-datasource-protocol/*": ["../orbitforge-datasource-protocol/src/*"]
+        }
+    },
+    "include": ["src/**/*", "test/**/*"],
+    "exclude": ["dist/**", "node_modules"],
+    "references": [
+        {
+            "path": "../orbitforge-geoutils"
+        },
+        {
+            "path": "../orbitforge-mapview"
+        },
+        {
+            "path": "../orbitforge-utils"
+        },
+        {
+            "path": "../orbitforge-draco"
+        },
+        {
+            "path": "../orbitforge-gltf"
+        },
+        {
+            "path": "../orbitforge-splats"
+        },
+        {
+            "path": "../orbitforge-datasource-protocol"
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "composite": true,
+        "declaration": true,
+        "outDir": "./lib",
+        "rootDir": "./src",
+        "paths": {
+            "@orbitforge/orbitforge-mapview": ["../orbitforge-mapview/src"],
+            "@orbitforge/orbitforge-mapview-decoder": ["../orbitforge-mapview-decoder/src"],
+            "@orbitforge/orbitforge-terrain-datasource": ["../orbitforge-terrain-datasource/src"],
+            "@orbitforge/orbitforge-map-controls": ["../orbitforge-map-controls/src"],
+            "@orbitforge/orbitforge-3dtile-datasource": ["../orbitforge-3dtile-datasource/src"],
+            "@orbitforge/orbitforge-datasource-protocol": ["../orbitforge-datasource-protocol/src"],
+            "@orbitforge/orbitforge-draw-controls": ["../orbitforge-draw-controls/src"],
+            "@orbitforge/orbitforge-webtile-datasource": ["../orbitforge-webtile-datasource/src"],
+            "@orbitforge/orbitforge-geoutils": ["../orbitforge-geoutils/src"],
+            "@orbitforge/orbitforge-features-datasource": ["../orbitforge-features-datasource/src"],
+            "@orbitforge/orbitforge-geojson-datasource": ["../orbitforge-geojson-datasource/src"],
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"],
+            "@orbitforge/orbitforge-vectortile-datasource": ["../orbitforge-vectortile-datasource/src"],
+            "@orbitforge/orbitforge-inspector": ["../orbitforge-inspector/src"],
+            "@orbitforge/orbitforge-vectortile-datasource/*": ["../orbitforge-vectortile-datasource/src/*"],
+            "@orbitforge/orbitforge-transfer-manager": ["../orbitforge-transfer-manager/src"],
+            "@orbitforge/orbitforge-gltf": ["../orbitforge-gltf/src"],
+            "@orbitforge/orbitforge-geometry": ["../orbitforge-geometry/src"],
+            "@orbitforge/orbitforge-text-canvas": ["../orbitforge-text-canvas/src"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["webpack.config.ts"],
+    "references": [
+        {
+            "path": "../orbitforge-mapview"
+        },
+        {
+            "path": "../orbitforge-mapview-decoder"
+        },
+        {
+            "path": "../orbitforge-terrain-datasource"
+        },
+        {
+            "path": "../orbitforge-map-controls"
+        },
+        {
+            "path": "../orbitforge-3dtile-datasource"
+        },
+        {
+            "path": "../orbitforge-datasource-protocol"
+        },
+        {
+            "path": "../orbitforge-draw-controls"
+        },
+        {
+            "path": "../orbitforge-webtile-datasource"
+        },
+        {
+            "path": "../orbitforge-geoutils"
+        },
+        {
+            "path": "../orbitforge-features-datasource"
+        },
+        {
+            "path": "../orbitforge-geojson-datasource"
+        },
+        {
+            "path": "../orbitforge-transfer-manager"
+        },
+        {
+            "path": "../orbitforge-geometry"
+        },
+        {
+            "path": "../orbitforge-utils"
+        },
+        {
+            "path": "../orbitforge-vectortile-datasource"
+        },
+        {
+            "path": "../orbitforge-inspector"
+        },
+        {
+            "path": "../orbitforge-gltf"
+        },
+        {
+            "path": "../orbitforge-text-canvas"
+        }
+    ]
+}

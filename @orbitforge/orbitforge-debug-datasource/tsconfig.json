@@ -1,0 +1,26 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "sourceMap": true,
+        "composite": true,
+        "declarationMap": true,
+        "paths": {
+            "@orbitforge/orbitforge-geoutils": ["../orbitforge-geoutils/src"],
+            "@orbitforge/orbitforge-mapview": ["../orbitforge-mapview/src"],
+            "@orbitforge/orbitforge-text-canvas": ["../orbitforge-text-canvas/src"]
+        }
+    },
+    "include": ["src/**/*"],
+    "references": [
+        {
+            "path": "../orbitforge-geoutils"
+        },
+        {
+            "path": "../orbitforge-mapview"
+        },
+        {
+            "path": "../orbitforge-text-canvas"
+        }
+    ]
+}

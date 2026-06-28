@@ -1,0 +1,7 @@
+orbitforge:
+  name: OrbitForge contributors
+  title: OrbitForge 开源项目贡献者
+  url: https://github.com/flywave/flywave.gl
+  image_url: https://github.com/flywave.png
+  socials:
+    github: flywave

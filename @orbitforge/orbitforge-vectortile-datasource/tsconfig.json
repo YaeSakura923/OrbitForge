@@ -1,0 +1,75 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+
+        "baseUrl": "./",
+        "composite": true,
+        "paths": {
+            "@orbitforge/orbitforge-datasource-protocol": ["../orbitforge-datasource-protocol/src"],
+            "@orbitforge/orbitforge-datasource-protocol/*": ["../orbitforge-datasource-protocol/src/*"],
+            "@orbitforge/orbitforge-geometry": ["../orbitforge-geometry/src"],
+            "@orbitforge/orbitforge-geometry/*": ["../orbitforge-geometry/src/*"],
+            "@orbitforge/orbitforge-geoutils": ["../orbitforge-geoutils/src"],
+            "@orbitforge/orbitforge-geoutils/*": ["../orbitforge-geoutils/src/*"],
+            "@orbitforge/orbitforge-lines": ["../orbitforge-lines/src"],
+            "@orbitforge/orbitforge-lines/*": ["../orbitforge-lines/src/*"],
+            "@orbitforge/orbitforge-lrucache": ["../orbitforge-lrucache/src"],
+            "@orbitforge/orbitforge-mapview": ["../orbitforge-mapview/src"],
+            "@orbitforge/orbitforge-mapview/*": ["../orbitforge-mapview/src/*"],
+            "@orbitforge/orbitforge-mapview-decoder": ["../orbitforge-mapview-decoder/src"],
+            "@orbitforge/orbitforge-mapview-decoder/*": ["../orbitforge-mapview-decoder/src/*"],
+            "@orbitforge/orbitforge-materials": ["../orbitforge-materials/src"],
+            "@orbitforge/orbitforge-materials/*": ["../orbitforge-materials/src/*"],
+            "@orbitforge/orbitforge-text-canvas": ["../orbitforge-text-canvas/src"],
+            "@orbitforge/orbitforge-transfer-manager": ["../orbitforge-transfer-manager/src"],
+            "@orbitforge/orbitforge-utils": ["../orbitforge-utils/src"],
+            "@orbitforge/orbitforge-test-utils": ["../orbitforge-test-utils/src"],
+            "@orbitforge/orbitforge-test-utils/*": ["../orbitforge-test-utils/src/*"],
+            "@orbitforge/orbitforge-fetch": ["../orbitforge-fetch"]
+        }
+    },
+    "include": ["src/**/*"],
+    "references": [
+        {
+            "path": "../orbitforge-datasource-protocol"
+        },
+        {
+            "path": "../orbitforge-geometry"
+        },
+        {
+            "path": "../orbitforge-geoutils"
+        },
+        {
+            "path": "../orbitforge-lines"
+        },
+        {
+            "path": "../orbitforge-lrucache"
+        },
+        {
+            "path": "../orbitforge-mapview"
+        },
+        {
+            "path": "../orbitforge-mapview-decoder"
+        },
+        {
+            "path": "../orbitforge-materials"
+        },
+        {
+            "path": "../orbitforge-text-canvas"
+        },
+        {
+            "path": "../orbitforge-transfer-manager"
+        },
+        {
+            "path": "../orbitforge-utils"
+        },
+        {
+            "path": "../orbitforge-test-utils"
+        },
+        {
+            "path": "../orbitforge-fetch"
+        }
+    ]
+}

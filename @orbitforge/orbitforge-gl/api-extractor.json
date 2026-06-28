@@ -1,0 +1,114 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+    "mainEntryPointFilePath": "<projectFolder>/lib/index.d.ts",
+    "bundledPackages": [
+      "@orbitforge/orbitforge-mapview",
+        "@orbitforge/orbitforge-mapview-decoder",
+        "@orbitforge/orbitforge-terrain-datasource",
+        "@orbitforge/orbitforge-map-controls",
+        "@orbitforge/orbitforge-3dtile-datasource",
+        "@orbitforge/orbitforge-datasource-protocol",
+        "@orbitforge/orbitforge-draw-controls",
+        "@orbitforge/orbitforge-webtile-datasource",
+        "@orbitforge/orbitforge-geoutils",
+        "@orbitforge/orbitforge-features-datasource",
+        "@orbitforge/orbitforge-utils",
+        "@orbitforge/orbitforge-vectortile-datasource",
+        "@orbitforge/orbitforge-inspector",
+        "@orbitforge/orbitforge-gltf",
+        "@orbitforge/orbitforge-transfer-manager",
+        "@orbitforge/orbitforge-geometry"
+    ],
+    "compiler": {
+        "tsconfigFilePath": "<projectFolder>/tsconfig.json",
+        "overrideTsconfig": {
+            "include": ["lib/**/*.d.ts"],
+            "exclude": [
+                "src/**/*",
+                "node_modules/**/*",
+                "dist/**/*",
+                "**/*.test.ts",
+                "**/*.spec.ts",
+                "**/test/**/*"
+            ],
+            "compilerOptions": {
+                "skipLibCheck": true,
+                "noImplicitAny": false,
+                "resolveJsonModule": true,
+                "esModuleInterop": true,
+                "paths": {
+                    "@orbitforge/orbitforge-mapview": ["../orbitforge-mapview/lib/src"],
+                    "@orbitforge/orbitforge-mapview-decoder": ["../orbitforge-mapview-decoder/lib/src"],
+                    "@orbitforge/orbitforge-webtile-datasource": ["../orbitforge-webtile-datasource/lib/src"],
+                    "@orbitforge/orbitforge-features-datasource": ["../orbitforge-features-datasource/lib/src"],
+                    "@orbitforge/orbitforge-geojson-datasource": ["../orbitforge-geojson-datasource/lib/src"],
+                    "@orbitforge/orbitforge-terrain-datasource": ["../orbitforge-terrain-datasource/lib/src"],
+                    "@orbitforge/orbitforge-vectortile-datasource": ["../orbitforge-vectortile-datasource/lib/src"],
+                    "@orbitforge/orbitforge-3dtile-datasource": ["../orbitforge-3dtile-datasource/lib/src"],
+                    "@orbitforge/orbitforge-draw-controls": ["../orbitforge-draw-controls/lib/src"],
+                    "@orbitforge/orbitforge-map-controls": ["../orbitforge-map-controls/lib/src"],
+                    "@orbitforge/orbitforge-inspector": ["../orbitforge-inspector/lib/src"],
+                    "@orbitforge/orbitforge-datasource-protocol": ["../orbitforge-datasource-protocol/lib/src"],
+                    "@orbitforge/orbitforge-geoutils": ["../orbitforge-geoutils/lib/src"],
+                    "@orbitforge/orbitforge-utils": ["../orbitforge-utils/lib/src"],
+                    "@orbitforge/orbitforge-gltf": ["../orbitforge-gltf/lib/src"],
+                    "@orbitforge/orbitforge-transfer-manager": ["../orbitforge-transfer-manager/lib/src"],
+                    "@orbitforge/orbitforge-geometry": ["../orbitforge-geometry/lib/src"]
+                }
+            }
+        }
+    },
+    "apiReport": {
+        "enabled": false,
+        "reportFileName": "<unscopedPackageName>.api.md"
+    },
+    "docModel": {
+        "enabled": true,
+        "apiJsonFilePath": "<projectFolder>/temp/<unscopedPackageName>.api.json"
+    },
+    "dtsRollup": {
+        "enabled": true,
+        "untrimmedFilePath": "dist/orbitforge.d.ts",
+        "publicTrimmedFilePath": "",
+        "omitTrimmingComments": true
+    },
+    "tsdocMetadata": {
+        "enabled": false
+    },
+    "newlineKind": "lf",
+    "messages": {
+        "compilerMessageReporting": {
+            "default": {
+                "logLevel": "none"
+            }
+        },
+        "extractorMessageReporting": {
+            "default": {
+                "logLevel": "none",
+                "addToApiReportFile": false
+            },
+            "ae-missing-release-tag": {
+                "logLevel": "none",
+                "addToApiReportFile": false
+            },
+            "ae-forgotten-export": {
+                "logLevel": "none",
+                "addToApiReportFile": false
+            },
+            "ae-internal-missing-underscore": {
+                "logLevel": "none",
+                "addToApiReportFile": false
+            },
+            "ae-incompatible-release-tags": {
+                "logLevel": "none",
+                "addToApiReportFile": false
+            }
+        },
+        "tsdocMessageReporting": {
+            "default": {
+                "logLevel": "none",
+                "addToApiReportFile": false
+            }
+        }
+    }
+}

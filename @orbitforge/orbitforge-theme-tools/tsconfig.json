@@ -1,0 +1,25 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./lib",
+        "rootDir": "./",
+        "sourceMap": true,
+        "composite": true,
+        "incremental": true,
+        "declarationMap": true,
+        "paths": {
+            "@orbitforge/orbitforge-mapview": ["../orbitforge-mapview/src"],
+            "@orbitforge/orbitforge-datasource-protocol": ["../orbitforge-datasource-protocol/src"]
+        }
+    },
+    "include": ["src/**/*"],
+    "exclude": ["dist/**", "test/**", "node_modules"],
+    "references": [
+        {
+            "path": "../orbitforge-mapview"
+        },
+        {
+            "path": "../orbitforge-datasource-protocol"
+        }
+    ]
+}

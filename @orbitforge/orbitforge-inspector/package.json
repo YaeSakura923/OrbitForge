@@ -1,0 +1,48 @@
+{
+    "name": "@orbitforge/orbitforge-inspector",
+    "version": "0.0.1",
+    "description": "A debugging and monitoring panel for orbitforge MapView using dat.GUI",
+    "keywords": [
+        "orbitforge",
+        "inspector",
+        "debugger",
+        "mapview",
+        "dat.gui",
+        "performance"
+    ],
+    "main": "lib/src/index.js",
+    "typings": "lib/src/index.d.ts",
+    "author": {
+        "name": "orbitforge contributors",
+        "url": "https://orbitforge.dev"
+    },
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/YaeSakura923/orbitforge.git",
+        "directory": "@orbitforge/orbitforge-inspector"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "cross-env tsc --build $EXTRA_TSC_ARGS",
+        "prepare": "cross-env tsc --build $EXTRA_TSC_ARGS --force"
+    },
+    "devDependencies": {
+        "@types/dat.gui": "catalog:",
+        "@types/three": "catalog:",
+        "css-loader": "catalog:",
+        "dat.gui": "catalog:",
+        "html-webpack-plugin": "catalog:",
+        "style-loader": "catalog:",
+        "typescript": "catalog:",
+        "webpack": "catalog:",
+        "webpack-cli": "catalog:",
+        "webpack-dev-server": "catalog:"
+    },
+    "dependencies": {
+        "@orbitforge/orbitforge-datasource-protocol": "workspace:*"
+    },
+    "private": true
+}
